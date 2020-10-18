@@ -52,6 +52,9 @@ function checkList() {
         $field.addClass('delete');
         lastDeletedTask = $field.text();
         console.log(lastDeletedTask);
+        newTaskList.splice(indexOf(lastDeletedTask), 1)
+        localStorage.setItem("savedList", JSON.stringify(newTaskList));
+        $('.task__list').remove(newTask)
 
         setTimeout(function(){
            $field.remove();
@@ -69,6 +72,7 @@ window.onload = function() {
   for (var i = 0; i < pastPage.length; i++) {
     var added = pastPage[i]
     $('.task__list').append(added);
+    //checklist();
 }
 }
 

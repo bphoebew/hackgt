@@ -223,10 +223,40 @@ var trtyOne = $('#trtyOne');
 
 var currentFi = localStorage.getItem('fiColor') || "#F4B9B2";
 var currentSec = localStorage.getItem('secColor') || "#F4B9B2";
-
+var currentThr = localStorage.getItem('thrColor') || "#F4B9B2";
+var currentFr = localStorage.getItem('frColor') || "#F4B9B2";
+var currentFv = localStorage.getItem('fvColor') || "#F4B9B2";
+var currentSx = localStorage.getItem('sxColor') || "#F4B9B2";
+var currentSv = localStorage.getItem('svColor') || "#F4B9B2";
+var currentEg = localStorage.getItem('egColor') || "#F4B9B2";
+var currentNin = localStorage.getItem('ninColor') || "#F4B9B2";
+var currentTen = localStorage.getItem('tenColor') || "#F4B9B2";
+var currentElv = localStorage.getItem('elvColor') || "#F4B9B2";
+var currentTwl = localStorage.getItem('twlColor') || "#F4B9B2";
+var currentThiteen = localStorage.getItem('thiteenColor') || "#F4B9B2";
+var currentFrteen = localStorage.getItem('frteenColor') || "#F4B9B2";
+var currentFvteen = localStorage.getItem('fvteenColor') || "#F4B9B2";
+var currentSxteen = localStorage.getItem('sxteenColor') || "#F4B9B2";
+var currentSvt = localStorage.getItem('svtColor') || "#F4B9B2";
+var currentEgt = localStorage.getItem('egtColor') || "#F4B9B2";
+var currentNnt = localStorage.getItem('nntColor') || "#F4B9B2";
+var currentTwt = localStorage.getItem('twtColor') || "#F4B9B2";
+var currentTwtOne = localStorage.getItem('twtOneColor') || "#F4B9B2";
+var currentTwtTwo = localStorage.getItem('twtTwoColor') || "#F4B9B2";
+var currentTwtThr = localStorage.getItem('twtThrColor') || "#F4B9B2";
+var currentTwtFr = localStorage.getItem('twtFrColor') || "#F4B9B2";
+var currentTwtFv = localStorage.getItem('twtFvColor') || "#F4B9B2";
+var currentTwtSx = localStorage.getItem('twtSxColor') || "#F4B9B2";
+var currentTwtSv = localStorage.getItem('twtSvColor') || "#F4B9B2";
+var currentTwtEg = localStorage.getItem('twtEgColor') || "#F4B9B2";
+var currentTwtNin = localStorage.getItem('twtNinColor') || "#F4B9B2";
+var currentTrty = localStorage.getItem('trtyColor') || "#F4B9B2";
+var currentTrtyOne = localStorage.getItem('trtyOneColor') || "#F4B9B2";
 
 fi.css('backgroundColor', currentFi);
 sec.css('backgroundColor', currentSec);
+thr.css('backgroundColor', currentSec);
+
 
 fi.on("click", turnFi);
 sec.on("click", turnSec);
@@ -251,13 +281,29 @@ function turnFi(){
   }
 }
 
-var countFi = 0;
+var countSec = 0;
 function turnSec(){
   if (countSec == 0){
     var bodyColor = "#DAEDBD";
-    fi.css('backgroundColor', "#DAEDBD");
+    sec.css('backgroundColor', "#DAEDBD");
+    localStorage.setItem("secColorTwo", bodyColor);
+    countSec++;
+    console.log("hi");
+  }else if (countSec == 1){
+    var bodyColor = "#F4B9B2";
+    sec.css('backgroundColor', "#F4B9B2");
+    localStorage.setItem("secColorTwo", bodyColor);
+    countSec--;
+  }
+}
+
+var countThr = 0;
+function turnThr(){
+  if (countThr == 0){
+    var bodyColor = "#DAEDBD";
+    thr.css('backgroundColor', "#DAEDBD");
     localStorage.setItem("fiColor", bodyColor);
-    countFi++;
+    countThr++;
     console.log("hi");
   }else if (countFi == 1){
     var bodyColor = "#F4B9B2";
@@ -271,4 +317,6 @@ function refresh(){
     var storedBody = localStorage.getItem("fiColor");
     var storedSec = localStorage.getItem("secColor");
     var storedFi = localStorage.getItem("fiColor");
+    var storedSecTwo = localStorage.getItem("secColorTwo");
+
 }
