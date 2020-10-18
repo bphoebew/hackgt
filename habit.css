@@ -19,14 +19,16 @@ body{
 }
 .info{
   text-align: center;
-  margin-top: 30px;
+  font-size: 20px;
+  /* margin-top: 30px; */
   font-family: 'Lora', serif;
-  letter-spacing: 2px:
+  letter-spacing: 2px;
 }
 .title{
   text-align: center;
   font-size: 80px;
-  margin-bottom: 0px;
+  margin-top: 30px;
+  margin-bottom: 3px;
   font-family: 'Istok Web', sans-serif;
   color: white;
 }
@@ -39,18 +41,18 @@ a:visited{
   color: black;
   text-decoration: none;
 }
-html, body {
+/* html, body {
   height: 100%;
   width: 100%;
-}
-/*  background: #FFBE0B;
+} */
+ /* background: #FFBE0B;
   font-family: "Space Mono";
   font-weight:400;
   font-size: 0.8em;
   color: #aaa;
   display:flex;
 
-}*/
+} */
 
 input {
   font-family: "Space Mono";
@@ -58,10 +60,10 @@ input {
   outline:none;
 }
 
-* {
+/* * {
   margin:0;
   padding:0;
-}
+} */
 
 .container {
   width: 600px;
@@ -183,4 +185,309 @@ input {
   background:none;
   width:100%;
   color:#919191;
+}
+#one{
+  height: 100vh;
+  width: 100%;
+}
+.fundo {
+  position: relative;
+  width: 550px;
+  height: 400px;
+}
+.dat {
+  position: absolute;
+  top: 230px;
+  left: 170px;
+  width: 222px;
+  border-radius: 0 0 15px 15px;
+  border-bottom: 92px solid #fbb9b9;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+}
+.dat::after {
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px 5px 0 0;
+  background: #fbb9b9;
+  content:"";
+}
+.dat::before {
+  position: absolute;
+  bottom: -100px;
+  left: -10px;
+  width: 220px;
+  height: 25px;
+  background: #fbb9b9;
+  border-radius: 5px 5px 10px 10px;
+  content:"";
+}
+.folha {
+  position: absolute;
+  bottom: 45px;
+  left: 25px;
+  width: 150px;
+  height: 50px;
+  background: #fff;
+  animation: cresce 1s infinite alternate ease-in-out;
+}
+.botoes {
+  position: absolute;
+  top: -0px;
+  left: 1px;
+  width: 200px;
+  height: 0px;
+  border-radius: 0 0 10px 10px;
+  border-bottom: 80px solid #F5F5F5;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+.coiso-1 {
+  position: absolute;
+  top: -50px;
+  left: -10px;
+  width: 220px;
+  height: 20px;
+  background: #ccc;
+  animation: anda .2s infinite alternate ease-in-out;
+}
+.coiso-1::after {
+  position: absolute;
+  bottom: -20px;
+  left: -5px;
+  width: 12px;
+  height: 50px;
+  background: #ddd;
+  border-radius: 40%;
+  content:"";
+}
+.coiso-1::before {
+  position: absolute;
+  bottom: -20px;
+  left: 210px;
+  width: 12px;
+  height: 50px;
+  background: #ddd;
+  border-radius: 40%;
+  content:"";
+}
+.botao {
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-1 {
+  position: absolute;
+  left: 25px;
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-2 {
+  position: absolute;
+  left: calc(25px * 2);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-3 {
+  position: absolute;
+  left: calc(25px * 3);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-4 {
+  position: absolute;
+  left: calc(25px * 4);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-5 {
+  position: absolute;
+  left: calc(25px * 5);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-6 {
+  position: absolute;
+  left: calc(25px * 6);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-7 {
+  position: absolute;
+  top: 23px;
+  left: 0;
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-8 {
+  position: absolute;
+  top: 23px;
+  left: 25px;
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-9 {
+  position: absolute;
+  top: 23px;
+  left: calc(25px * 2);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-10 {
+  position: absolute;
+  top: 23px;
+  left: calc(25px * 3);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-11 {
+  position: absolute;
+  top: 23px;
+  left: calc(25px * 4);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-12 {
+  position: absolute;
+  top: 23px;
+  left: calc(25px * 5);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-13 {
+  position: absolute;
+  top: 23px;
+  left: calc(25px * 6);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-14 {
+  position: absolute;
+  top: 47px;
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-15 {
+  position: absolute;
+  top: 47px;
+  left: 25px;
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-16 {
+  position: absolute;
+  top: 47px;
+  left: calc(25px * 2);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-17 {
+  position: absolute;
+  top: 47px;
+  left: calc(25px * 3);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-18 {
+  position: absolute;
+  top: 47px;
+  left: calc(25px * 4);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-19 {
+  position: absolute;
+  top: 47px;
+  left: calc(25px * 5);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+.botao-20 {
+  position: absolute;
+  top: 47px;
+  left: calc(25px * 6);
+  width: 15px;
+  height: 17px;
+  background: #ccc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0 0 #fff;
+}
+
+@keyframes cresce {
+	0% {transform: scaleY(1.6)}
+	100% {transform: scaleY(4)}
+}
+@keyframes anda {
+  0%   {transform: translateX(0px)}
+  100% {transform: translateX(5px)}
+}
+.flexCen{
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
 }

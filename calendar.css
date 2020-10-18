@@ -144,7 +144,7 @@ table {
 }
 
 table, th, td {
-  border: 1px solid black;
+  border: .5px solid black;
 }
 
 td {
@@ -210,9 +210,9 @@ td {
   visibility: hidden;
 }
 
-#blackD15, #blueD8, #mintD24{
+/* #blackD25, #blueD28, #mintD31{
   visibility: visible;
-}
+} */
 
 /* .flexAlign-cal{
   display: flex;

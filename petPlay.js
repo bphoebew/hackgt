@@ -264,10 +264,11 @@ eg.css('backgroundColor', currentEg);
 nin.css('backgroundColor', currentNin);
 ten.css('backgroundColor', currentTen);
 elv.css('backgroundColor', currentElv);
-
+twl.css('backgroundColor', currentTwl);
 
 fi.on("click", turnFi);
 sec.on("click", turnSec);
+thr.on("click", turnThr);
 
 var countFi = 0;
 function turnFi(){
@@ -306,13 +307,13 @@ function turnThr(){
   if (countThr == 0){
     var bodyColor = "#DAEDBD";
     thr.css('backgroundColor', "#DAEDBD");
-    localStorage.setItem("fiColor", bodyColor);
+    localStorage.setItem("thrColor", bodyColor);
     countThr++;
     console.log("hi");
   }else if (countThr == 1){
     var bodyColor = "#F4B9B2";
-    fi.css('backgroundColor', "#F4B9B2");
-    localStorage.setItem("fiColor", bodyColor);
+    thr.css('backgroundColor', "#F4B9B2");
+    localStorage.setItem("thrColor", bodyColor);
     countFi--;
   }
 }
