@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>memopet - play</title>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="petPlay.css">
+  </head>
+  <body>
+    <div class = "menu">
+      <a href = "index.html"><h1 class = "menuText"> HOME </h1></a>
+      <a href = "pet.html"><h1 class = "menuText"> MEET YOUR PET </h1></a>
+      <a href = "habit.html"><h1 class = "menuText"> HABITS </h1></a>
+      <a href = "calendar.html"><h1 class = "menuText"> CALENDAR </h1></a>
+    </div>
+
+    <div class = "flexRow">
+    <div class = "month">
+      <h1 class = "monthTitle"> Log Your Monthly Habits </h1>
+      <div class = "flexRow">
+        <button style = "background-color: #F4B9B2" class = "but" id = "fi">1</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "sec">2</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "thr">3</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "fr">4</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "fv">5</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "sx">6</button>
+      </div>
+      <div class = "flexRow">
+        <button style = "background-color: #F4B9B2" class = "but" id = "sv">7</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "eg">8</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "nin">9</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "ten">10</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "elv">11</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "twl">12</button>
+      </div>
+      <div class = "flexRow">
+        <button style = "background-color: #F4B9B2" class = "but" id = "thiteen">13</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "frteen">14</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "fvteen">15</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "sxteen">16</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "svt">17</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "egt">18</button>
+      </div>
+      <div class = "flexRow">
+        <button style = "background-color: #F4B9B2" class = "but" id = "nnt">19</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "twt">20</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "twtOne">21</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "twtTwo">22</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "twtThr">23</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "twtFr">24</button>
+      </div>
+      <div class = "flexRow">
+        <button style = "background-color: #F4B9B2" class = "but" id = "twtFv">25</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "twtSx">26</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "twtSv">27</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "twtEg">28</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "twtNin">29</button>
+        <button style = "background-color: #F4B9B2" class = "but" id = "trty">30</button>
+      </div>
+      <div class = "flexRowTwo">
+        <button style = "background-color: #F4B9B2" class = "but" id = "trtyOne">31</button>
+
+      </div>
+
+    </div>
+    <div class = "petAll">
+      <h1 class = "name">Phoebe</h1>
+        <div class="critter idle">
+        	<div class="ear left"></div>
+        	<div class="ear right"></div>
+        	<div class="face">
+        		<div class="eye left">
+        			<div class="lid"></div>
+        		</div>
+        		<div class="eye right">
+        			<div class="lid"></div>
+        		</div>
+        		<div class="mouth"></div>
+        	</div>
+        </div>
+
+        <div class="activities">
+        	<button class="play" onclick="play()">Play</button>
+        	<button class="feed" onclick="feed()">Feed</button>
+        	<button class="rest" onclick="rest()">Rest</button>
+        </div>
+
+        <div class="stats">
+        	<p>Happiness</p>
+        	<div class="stat happy">
+        		<div class="progress"></div>
+        	</div>
+        	<p>Hunger</p>
+        	<div class="stat hunger">
+        		<div class="progress"></div>
+        	</div>
+        	<p>Sleepiness</p>
+        	<div class="stat sleep">
+        		<div class="progress"></div>
+        	</div>
+        </div>
+      </div>
+    </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script type="text/javascript" src="petPlay.js"></script>
+
+  </body>
+</html>

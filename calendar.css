@@ -1,0 +1,236 @@
+#pg-one, #pg-two{
+  height: 100vh;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body{
+  background-color: #E5B181;
+}
+/* NEEDED FOR ALL MENUS WITH CSS */
+a:link{
+  color: black;
+  text-decoration: none;
+}
+a:visited{
+  color: black;
+  text-decoration: none;
+}
+
+p{
+  font-family: 'Lora', serif;
+}
+
+.flexAll{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+/* menu bar */
+.menu{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.menuText{
+  margin-right: 20px;
+  font-family: 'Istok Web', sans-serif;
+  font-size: 20px;
+  /* color: white; */
+}
+.menuText:hover{
+  color: white;
+}
+
+/* title and subtitle */
+
+.title{
+  font-size: 80px;
+  margin-bottom: 0px;
+  font-family: 'Istok Web', sans-serif;
+  color: white;
+  text-align: center;
+}
+.info{
+  margin-top: 0px;
+  font-size: 20px;
+  /* margin-left: 40px; */
+  letter-spacing: 2px;
+  text-align: center;
+}
+.infoAll{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  /* margin-left: 10%; */
+}
+
+/* habit buttons */
+
+.habit-selection{
+  width: 20%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-left: 100px; */
+  /* border: 2px solid black;
+  border: 1px solid black; */
+}
+
+.flexRow{
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+/* .flexCen{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+} */
+
+/* .flexCol{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+/* } */
+
+.pinkB, .brownB, .orangeB, .mintB, .blueB, .blackB{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.habits-text{
+  font-family: 'Istok Web', sans-serif;
+  color: white;
+}
+
+button:focus{
+  outline: 0;
+}
+
+
+/* calendar table */
+
+.flex-center{
+  width: 70%;
+  height: 80vh;
+  display: flex;
+  /* justify-content: center; */
+  justify-content: flex-end;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  /* width: 70%; */
+  border-collapse: collapse;
+  margin-right: 15px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+.cal-text{
+  font-family: 'Lora', serif;
+  color: black;
+  opacity: 100%;
+}
+
+.day-of-week-text{
+  text-align: center;
+  /* font-family: 'Istok Web', sans-serif; */
+}
+
+.day-of-week{
+  line-height: 70px;
+  background-color: #F4B9B2;
+}
+
+#num-text{
+  font-size: 15px;
+  vertical-align: center;
+  color: black;
+}
+
+.date-row{
+  line-height: 10px;
+  background-color: #DAEDBD;
+}
+
+.week-row{
+  line-height: 60px;
+}
+
+/* calendar dots */
+.cal-dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  /* height: 25px;
+  width: 25px;
+  background-color: #black;
+  border-radius: 50%;
+  display: inline-block; */
+}
+
+.flexRow-cal{
+  /* width: 113px;
+  height: 89px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-content: space-between; */
+  /* margin-bottom: 20px; */
+}
+
+.pinkD, .brownD, .orangeD, .mintD, .blueD, .blackD{
+  visibility: hidden;
+}
+
+#pinkD1{
+  visibility: visible;
+}
+
+/* .flexAlign-cal{
+  display: flex;
+  align-content: center;
+} */
+/* tr:first-child td {
+  border-top: 0;
+} */
+
+/* .date-row{
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+} */
+
+/* .date-row{
+  display: flex;
+  justify-content: flex-start;
+} */

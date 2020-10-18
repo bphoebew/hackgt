@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="testPet.css">
+  </head>
+  <body>
+    <h1>Critter</h1>
+    <div class="critter idle">
+    	<div class="ear left"></div>
+    	<div class="ear right"></div>
+    	<div class="face">
+    		<div class="eye left">
+    			<div class="lid"></div>
+    		</div>
+    		<div class="eye right">
+    			<div class="lid"></div>
+    		</div>
+    		<div class="mouth"></div>
+    	</div>
+    </div>
+
+    <div class="activities">
+    	<button class="play" onclick="play()">Play</button>
+    	<button class="feed" onclick="feed()">Feed</button>
+    	<button class="rest" onclick="rest()">Rest</button>
+    </div>
+
+    <div class="stats">
+    	<p>Happiness</p>
+    	<div class="stat happy">
+    		<div class="progress"></div>
+    	</div>
+    	<p>Hunger</p>
+    	<div class="stat hunger">
+    		<div class="progress"></div>
+    	</div>
+    	<p>Sleepiness</p>
+    	<div class="stat sleep">
+    		<div class="progress"></div>
+    	</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="testPet.js"></script>
+  </body>
+</html>

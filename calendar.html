@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>memopet - calendar</title>
+    <link rel="stylesheet" href="calendar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&family=Lora&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class = "menu">
+      <a href = "index.html"><h1 class = "menuText"> HOME </h1></a>
+      <a href = "pet.html"><h1 class = "menuText"> MEET YOUR PET </h1></a>
+      <a href = "habit.html"><h1 class = "menuText"> HABITS </h1></a>
+      <a href = "calendar.html"><h1 class = "menuText"> CALENDAR </h1></a>
+    </div>
+
+    <section id="pg-one">
+      <div class="infoAll">
+        <h1 class="title">calendar.</h1>
+        <p class="info">all your logs in one place</p>
+      </div>
+    </section>
+    <!-- <h1 class="text title" id="title-other-page">Calendar</h1>
+    <p class="info">paragraph</p> -->
+
+    <!-- <button class="button button5">50%</button> -->
+  <section id="pg-two">
+    <div class = "flexAll">
+        <div class = "habit-selection">
+              <h2 class = "habits-text">select the habits you would like to view.</h2>
+                <div class = "flexRow">
+                  <button style = "background-color: #F4B9B2" class = "pinkB"></button>
+                  <button style = "background-color: #E5B181" class = "brownB"></button>
+                  <button style = "background-color: #DE6B48" class = "orangeB"></button>
+                </div>
+                <div class = "flexRow">
+                  <button style = "background-color: #DAEDBD" class = "mintB"></button>
+                  <button style = "background-color: #7DBBC3" class = "blueB"></button>
+                  <button style = "background-color: #5D5F71" class = "blackB"></button>
+                </div>
+        </div>
+
+        <div class="flex-center">
+          <table class="calendar">
+            <tr class="day-of-week cal-row">
+              <th class="day-of-week-text cal-text">Sunday</th>
+              <th class="day-of-week-text cal-text">Monday</th>
+              <th class="day-of-week-text cal-text">Tuesday</th>
+              <th class="day-of-week-text cal-text">Wednesday</th>
+              <th class="day-of-week-text cal-text">Thursday</th>
+              <th class="day-of-week-text cal-text">Friday</th>
+              <th class="day-of-week-text cal-text">Saturday</th>
+            </tr>
+            <tr class="week1-num cal-row date-row">
+              <td class="cal-text" id="num-text"></td>
+              <td class="cal-text" id="num-text"></td>
+              <td class="cal-text" id="num-text"></td>
+              <td class="cal-text" id="num-text"></td>
+              <td class="cal-text" id="num-text">1</td>
+              <td class="cal-text" id="num-text">2</td>
+              <td class="cal-text" id="num-text">3</td>
+            </tr>
+            <tr class="week1-space cal-row space-row">
+              <td class="cal-text week-row"></td>
+              <td class="cal-text week-row"></td>
+              <td class="cal-text week-row"></td>
+              <td class="cal-text week-row"></td>
+              <td class="cal-text week-row" id="day1">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD" id="pinkD1"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD" id="brownD1"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD" id="orangeD1"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD" id="mintD1"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD" id="blueD1"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD" id ="blackD1"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row" id="day2">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD" id="pinkD2"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD" id="brownD2"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD" id="orangeD2"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD" id="mintD2"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD" id="blueD2"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD" id="blackD2"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row" id="day3">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD" id="pinkD3"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD" id="brownD3"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD" id="orangeD3"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD" id="mintD3"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD" id="blueD3"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD" id="blackD3"></button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="week2-num cal-row date-row">
+              <td class="cal-text" id="num-text">4</td>
+              <td class="cal-text" id="num-text">5</td>
+              <td class="cal-text" id="num-text">6</td>
+              <td class="cal-text" id="num-text">7</td>
+              <td class="cal-text" id="num-text">8</td>
+              <td class="cal-text" id="num-text">9</td>
+              <td class="cal-text" id="num-text">10</td>
+            </tr>
+            <tr class="week2-space cal-row space-row">
+              <td class="cal-text week-row" id="day4">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD" id="pinkD4"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD" id="brownD4"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD" id="orangeD4"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD" id="mintD4"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD" id="blueD4"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD" id="blackD4"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="week3-num cal-row date-row">
+              <td class="cal-text" id="num-text">11</td>
+              <td class="cal-text" id="num-text">12</td>
+              <td class="cal-text" id="num-text">13</td>
+              <td class="cal-text" id="num-text">14</td>
+              <td class="cal-text" id="num-text">15</td>
+              <td class="cal-text" id="num-text">16</td>
+              <td class="cal-text" id="num-text">17</td>
+            </tr>
+            <tr class="week3-space cal-row space-row">
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="week4-num cal-row date-row">
+              <td class="cal-text" id="num-text">18</td>
+              <td class="cal-text" id="num-text">19</td>
+              <td class="cal-text" id="num-text">20</td>
+              <td class="cal-text" id="num-text">21</td>
+              <td class="cal-text" id="num-text">22</td>
+              <td class="cal-text" id="num-text">23</td>
+              <td class="cal-text" id="num-text">24</td>
+            </tr>
+            <tr class="week4-space cal-row space-row">
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+            <tr>
+            <tr class="week5-num cal-row date-row">
+              <td class="cal-text" id="num-text">25</td>
+              <td class="cal-text" id="num-text">26</td>
+              <td class="cal-text" id="num-text">27</td>
+              <td class="cal-text" id="num-text">28</td>
+              <td class="cal-text" id="num-text">29</td>
+              <td class="cal-text" id="num-text">30</td>
+              <td class="cal-text" id="num-text">31</td>
+            </tr>
+            <tr class="week5-space cal-row space-row">
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+              <td class="cal-text week-row">
+                <div class="all-dots-in-day">
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #F4B9B2" class="cal-dot pinkD"></button>
+                    <button style = "background-color: #E5B181" class="cal-dot brownD"></button>
+                    <button style = "background-color: #DE6B48" class="cal-dot orangeD"></button>
+                  </div>
+                  <div class = "flexRow-cal">
+                    <button style = "background-color: #DAEDBD" class="cal-dot mintD"></button>
+                    <button style = "background-color: #7DBBC3" class="cal-dot blueD"></button>
+                    <button style = "background-color: #5D5F71" class="cal-dot blackD"></button>
+                  </div>
+                </div>
+              </td>
+            <tr>
+            <!-- <tr class="week5-space cal-row space-row">
+              <td class="cal-text week-row">week 5</td>
+              <td class="cal-text week-row">week 5</td>
+              <td class="cal-text week-row">week 5</td>
+              <td class="cal-text week-row">week 5</td>
+              <td class="cal-text week-row">week 5</td>
+              <td class="cal-text week-row">week 5</td>
+              <td class="cal-text week-row">week 5</td> -->
+            </tr>
+          </table>
+        </div>
+    </div>
+  </section>
+</body>
+</html>
+    <!-- <table border='1'  bordercolor='#FFFF00' cellspacing='0' cellpadding='0' align=center >
+      <tr>
+        <td>
+        <table cellspacing='0' cellpadding='0' align=center  border='1' width='200'>
+          <td  align=center bgcolor='#FFFF00'>  </td><td colspan=5 align=center bgcolor='#FFFF00'><font size='3' face='Tahoma'>Oct 2020  </td><td  align=center bgcolor='#FFFF00'>   </td></tr><tr><td><font size='3' face='Tahoma'><b>Sun</b></font></td><td><font size='3' face='Tahoma'><b>Mon</b></font></td><td><font size='3'  -->
