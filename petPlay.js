@@ -222,7 +222,7 @@ var trty = $('#trty');
 var trtyOne = $('#trtyOne');
 
 var currentFi = localStorage.getItem('fiColor') || "#F4B9B2";
-var currentSec = localStorage.getItem('secColor') || "#F4B9B2";
+var currentSec = localStorage.getItem('secColorTwo') || "#F4B9B2";
 var currentThr = localStorage.getItem('thrColor') || "#F4B9B2";
 var currentFr = localStorage.getItem('frColor') || "#F4B9B2";
 var currentFv = localStorage.getItem('fvColor') || "#F4B9B2";
@@ -255,6 +255,7 @@ var currentTrtyOne = localStorage.getItem('trtyOneColor') || "#F4B9B2";
 
 fi.css('backgroundColor', currentFi);
 sec.css('backgroundColor', currentSec);
+thr.css('backgroundColor', currentSec);
 thr.css('backgroundColor', currentSec);
 
 
@@ -305,7 +306,7 @@ function turnThr(){
     localStorage.setItem("fiColor", bodyColor);
     countThr++;
     console.log("hi");
-  }else if (countFi == 1){
+  }else if (countThr == 1){
     var bodyColor = "#F4B9B2";
     fi.css('backgroundColor', "#F4B9B2");
     localStorage.setItem("fiColor", bodyColor);
@@ -314,7 +315,7 @@ function turnThr(){
 }
 
 function refresh(){
-    var storedBody = localStorage.getItem("fiColor");
+    var storedBody = localStorage.getItem("bodyColor");
     var storedSec = localStorage.getItem("secColor");
     var storedFi = localStorage.getItem("fiColor");
     var storedSecTwo = localStorage.getItem("secColorTwo");
