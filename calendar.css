@@ -2,10 +2,10 @@
   height: 100vh;
 }
 
-* {
+/* * {
   margin:0;
   padding:0;
-}
+} */
 
 body{
   background-color: #E5B181;
@@ -55,7 +55,8 @@ p{
 
 .title{
   font-size: 80px;
-  margin-bottom: 0px;
+  margin-top: 30px;
+  margin-bottom: 3px;
   font-family: 'Istok Web', sans-serif;
   color: white;
   text-align: center;
@@ -70,8 +71,12 @@ p{
 .infoAll{
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   /* margin-left: 10%; */
+}
+.flexCenTwo{
+  display: flex;
+  justify-content: center;
 }
 
 /* habit buttons */
@@ -208,6 +213,10 @@ td {
 
 .pinkD, .brownD, .orangeD, .mintD, .blueD, .blackD{
   visibility: hidden;
+}
+
+.girl-img{
+  text-align: center;
 }
 
 /* #blackD25, #blueD28, #mintD31{

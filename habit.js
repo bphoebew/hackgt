@@ -72,7 +72,6 @@ window.onload = function() {
   for (var i = 0; i < pastPage.length; i++) {
     var added = pastPage[i]
     $('.task__list').append(added);
-    //checklist();
 }
 }
 
