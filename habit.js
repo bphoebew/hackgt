@@ -52,9 +52,9 @@ function checkList() {
         $field.addClass('delete');
         lastDeletedTask = $field.text();
         console.log(lastDeletedTask);
-        newTaskList.splice(indexOf(lastDeletedTask), 1)
-        localStorage.setItem("savedList", JSON.stringify(newTaskList));
-        $('.task__list').remove(newTask)
+        // newTaskList.splice(indexOf(lastDeletedTask), 1)
+        // localStorage.setItem("savedList", JSON.stringify(newTaskList));
+        // $('.task__list').remove(newTask)
 
         setTimeout(function(){
            $field.remove();

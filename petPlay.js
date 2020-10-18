@@ -255,16 +255,19 @@ var currentTrtyOne = localStorage.getItem('trtyOneColor') || "#F4B9B2";
 
 fi.css('backgroundColor', currentFi);
 sec.css('backgroundColor', currentSec);
-thr.css('backgroundColor', currentSec);
-thr.css('backgroundColor', currentSec);
+thr.css('backgroundColor', currentThr);
+fr.css('backgroundColor', currentFr);
+fv.css('backgroundColor', currentFv);
+sx.css('backgroundColor', currentSx);
+sv.css('backgroundColor', currentSv);
+eg.css('backgroundColor', currentEg);
+nin.css('backgroundColor', currentNin);
+ten.css('backgroundColor', currentTen);
+elv.css('backgroundColor', currentElv);
 
 
 fi.on("click", turnFi);
 sec.on("click", turnSec);
-// sec.on("click", turnSec);
-// thr.on("click", turnThr);
-// fr.on("click", turnFr);
-// orangeB.on("click", orangeBody);
 
 var countFi = 0;
 function turnFi(){
